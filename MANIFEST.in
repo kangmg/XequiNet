@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+include install_env.sh
+
+recursive-include xequinet/utils/basis *
+recursive-include xequinet/utils/pre_computed *
