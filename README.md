@@ -45,3 +45,5 @@ See the markdown files in `docs` for details.
 `docs/inference.md`: Prediction with a trained model `xxx.pt`.
 
 `docs/geometry.md`: Geometry optimization and molecular dynamics with a **JIT** model `xxx.jit`.
+
+`docs/ase_interface.md`: Usage of **JIT** model(`xxx.jit`) in the ase interface.
