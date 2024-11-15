@@ -10,7 +10,7 @@ class XeqCalculator(Calculator):
     ASE calculator for XequiNet models.
     Supports both MD and geometry optimization model types.
     """
-    implemented_properties = ["energy"]  # Common properties for both types
+    implemented_properties = ["energy", "forces"]  # Common properties for both types
     default_parameters = {
         "cutoff": 5.0,
         "max_edges": 100,
@@ -42,9 +42,7 @@ class XeqCalculator(Calculator):
         
         # Add additional properties
         if self.model_type == "md":
-            self.implemented_properties += ["energies", "stress", "stresses", "forces"]
-        else:
-            self.implemented_properties += ["gradient"]
+            self.implemented_properties += ["energies", "stress", "stresses"]
         
         # Initialize model
         self.model = None
